@@ -31,6 +31,42 @@ console.log(name);
 let greeting = 'My name is' + " " + name;
 console.log(greeting);
 
+console.log("Using functions:");
+// function to make square numbers
+function makeSquare(theNumb) {
+  let squared = theNumb * theNumb;
+  return squared;
+}
+
+let try01 = makeSquare(3);
+console.log(try01);
+
+let try02 = makeSquare(4);
+  console.log(try02);
+
+let try03 = makeSquare(12);
+  console.log(try03);
+
+// Functions on my own
+function makeName(name, middle, last) {
+// Combine the names with spaces in between
+let fullName = name + ' ' + middle + ' ' + last;
+return fullName;
+}
+
+// Call the function with different sets of names
+let fullName1 = makeName("Dina", "Beth", "Barrish");
+console.log(fullName1);
+
+let fullName2 = makeName("Benjamin", "Louis", "Barrish");
+console.log(fullName2);
+
+let fullName3 = makeName('Robert',' "Beto" ', "O'Rourke");
+console.log(fullName3);
+
+
+
+
 
   </script>
 </body>
