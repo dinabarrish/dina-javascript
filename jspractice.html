@@ -20,6 +20,16 @@ console.log(y);
 let z = x * y;
 console.log(z);
 
+// Math on my own
+let a = 5 + 6;
+console.log(a);
+
+let b = 10 - 2;
+console.log(b);
+
+let c = 20 / 4;
+console.log(c);
+
 console.log("Working with strings:");
 let firstName = 'Dina';
 let middleName = 'Beth';
@@ -50,8 +60,8 @@ let try03 = makeSquare(12);
 // Functions on my own
 function makeName(name, middle, last) {
 // Combine the names with spaces in between
-let fullName = name + ' ' + middle + ' ' + last;
-return fullName;
+  let fullName = name + ' ' + middle + ' ' + last;
+  return fullName;
 }
 
 // Call the function with different sets of names
@@ -61,13 +71,57 @@ console.log(fullName1);
 let fullName2 = makeName("Benjamin", "Louis", "Barrish");
 console.log(fullName2);
 
-let fullName3 = makeName('Robert',' "Beto" ', "O'Rourke");
+let fullName3 = makeName("Robert", "\"Beto\"", "O'Rourke");
 console.log(fullName3);
 
+// Just a log to show in our Console
+console.log("Making a better name function:");
 
+// A better name function to fix middle initials
+function makeBetterName(firstName, middleName, lastName) {
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
 
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("John", "F", "Kennedy"));
 
+// Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+   // adding and updating here
+   middleName = middleName + ".";
+  }
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
 
+console.log(onMyown("Jay", "C", "Penny"));
+function onMyown(firstName, middleName, lastName)
+{
+  if (middleName.length === 1) {
+  middleName = middleName + ".";
+  }
+  let test = firstName + " " + middleName + " " + lastName;
+  return test;
+}
+
+console.log("scoreCompare function");
+  function scoreCompare(home, away) {
+    if (home > away) {
+      return "Home team wins!";
+    } else if (home === away) {
+      return "It was a tie"
+     } else {
+      return "Away team wins :("
+    }
+    }
+
+  
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(4,4));
+  
   </script>
 </body>
 </html>
